@@ -1,11 +1,13 @@
 #!/usr/bin/env python
 # coding=utf-8
 
+import train as t
+
 def main():
-    anwser = input('Am I biatch?')
+    anwser = input('Am I biatch? ')
     if anwser:
         print('Yah, exactly you\'re biatch!')
+        t.train(1 / len(anwser))
 
-main()
-#if __name__ == "__main()__":
-#    main()
+if __name__ == "__main__":
+    main()
